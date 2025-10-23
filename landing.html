@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FITTIN - Геймификация в мобильном приложении</title>
+    <title>FITTIN</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <!-- Animated Background -->
@@ -25,7 +26,7 @@
             <nav>
                 <a href="#features">Преимущества</a>
                 <a href="#games">Игры</a>
-                <a href="#contact">Контакты</a>
+                <a href="#footer">Контакты</a>
                 <a href="#contact" class="cta-header">Связь</a>
             </nav>
         </div>
@@ -55,6 +56,35 @@
                         <img src="images/widget.png" alt="Игровой виджет">
                     </div>
                 </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">+150%</div>
+                            <div class="stat-label">Рост продаж</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">10K+</div>
+                            <div class="stat-label">Новых клиентов</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i data-lucide="gamepad-2"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">+85%</div>
+                            <div class="stat-label">Вовлеченность</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -64,43 +94,98 @@
         <h2 class="section-title">Преимущества геймификации</h2>
         <p class="section-subtitle">Увеличивайте прибыль и лояльность клиентов через игровые механики</p>
         <div class="features-grid">
-            <!-- Рост бизнеса -->
             <div class="feature-card">
-                <h3 class="feature-title">Увеличение продаж</h3>
-                <ul class="feature-list">
-                    <li>Повышение конверсии на 30-50%</li>
-                    <li>Увеличение среднего чека</li>
-                    <li>Рост частоты покупок</li>
-                    <li>Мотивация к повторным заказам</li>
-                    <li>Стимулирование допродаж</li>
-                    <li>Прозрачная система наград</li>
-                </ul>
+                <div class="feature-icon">
+                    <i data-lucide="shopping-cart"></i>
+                </div>
+                <h3 class="feature-title">Увеличение чека</h3>
+                <p class="feature-description">Рост среднего чека и частоты покупок</p>
             </div>
 
-            <!-- Вовлеченность (центральная) -->
-            <div class="feature-card featured">
-                <h3 class="feature-title">Высокая вовлеченность</h3>
-                <ul class="feature-list">
-                    <li>Игровой опыт привлекает внимание</li>
-                    <li>Увеличение времени в приложении</li>
-                    <li>Формирование привычки</li>
-                    <li>Персональные достижения</li>
-                    <li>Система уровней и наград</li>
-                    <li>Регулярные активности</li>
-                </ul>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i data-lucide="repeat"></i>
+                </div>
+                <h3 class="feature-title">Повторные покупки</h3>
+                <p class="feature-description">Мотивация клиентов возвращаться снова</p>
             </div>
 
-            <!-- Аналитика -->
             <div class="feature-card">
-                <h3 class="feature-title">Аналитика поведения</h3>
-                <ul class="feature-list">
-                    <li>Детальная статистика действий</li>
-                    <li>Понимание предпочтений клиентов</li>
-                    <li>Сегментация аудитории</li>
-                    <li>Прогнозирование трендов</li>
-                    <li>Оптимизация стратегии</li>
-                    <li>Отчеты в реальном времени</li>
-                </ul>
+                <div class="feature-icon">
+                    <i data-lucide="smartphone"></i>
+                </div>
+                <h3 class="feature-title">Вовлеченность</h3>
+                <p class="feature-description">Игровой опыт привлекает внимание</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i data-lucide="clock"></i>
+                </div>
+                <h3 class="feature-title">Время в приложении</h3>
+                <p class="feature-description">Увеличение времени взаимодействия</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i data-lucide="heart"></i>
+                </div>
+                <h3 class="feature-title">Формирование привычки</h3>
+                <p class="feature-description">Создание регулярной активности</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i data-lucide="award"></i>
+                </div>
+                <h3 class="feature-title">Система наград</h3>
+                <p class="feature-description">Персональные достижения и уровни</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2 class="section-title">Как это работает?</h2>
+        
+        <div class="steps-container">
+            <div class="step-item">
+                <div class="step-circle">
+                    <i data-lucide="search"></i>
+                </div>
+                <h3 class="step-title">Анализ и планирование</h3>
+                <p class="step-description">Изучаем ваш бизнес, определяем ключевые метрики успеха.</p>
+            </div>
+
+            <div class="step-connector"></div>
+
+            <div class="step-item">
+                <div class="step-circle">
+                    <i data-lucide="palette"></i>
+                </div>
+                <h3 class="step-title">Дизайн механик</h3>
+                <p class="step-description">Создаем увлекательные игры и систему вознаграждений.</p>
+            </div>
+
+            <div class="step-connector"></div>
+
+            <div class="step-item">
+                <div class="step-circle active">
+                    <i data-lucide="code"></i>
+                </div>
+                <h3 class="step-title">Разработка</h3>
+                <p class="step-description">Разрабатываем игровые модули и интегрируем их в ваше приложение.</p>
+            </div>
+
+            <div class="step-connector"></div>
+
+            <div class="step-item">
+                <div class="step-circle">
+                    <i data-lucide="rocket"></i>
+                </div>
+                <h3 class="step-title">Запуск</h3>
+                <p class="step-description">Запускаем геймификацию и постоянно оптимизируем результаты.</p>
             </div>
         </div>
     </section>
@@ -129,18 +214,28 @@
             </div>
             <div class="game-description">
                 <p>Адаптируем культовую игру под ваш бизнес. Простая механика и увлекательный геймплей привлекают внимание и удерживают пользователей в приложении.</p>
+                <ul class="game-features">
+                    <li>Тапай и взлетай</li>
+                    <li>Избегай препятствий</li>
+                    <li>Бей рекорды и забирай призы</li>
+                </ul>
                 </div>
-                </div>
+            </div>
      </section>
 
      <!-- Street Beat Game Section -->
      <section class="street-beat-section">
          <div class="street-beat-wrapper">
              <div class="street-beat-content">
-                 <div class="street-beat-info">
-                     <h2>Выбери <br>верную модель</h2>
-                     <p>Интерактивная игра, где клиенты угадывают продукт из вашего ассортимента и получают вознаграждения. Идеально подходит для fashion-брендов и магазинов одежды.</p>
-            </div>
+                <div class="street-beat-info">
+                    <h2>Выбери <br>верную модель</h2>
+                    <p>Интерактивная игра, где клиенты угадывают продукт из вашего ассортимента и получают вознаграждения.</p>
+                    <ul class="street-beat-features">
+                        <li>Изучай товары</li>
+                        <li>Развивай внимательность</li>
+                        <li>Копи баллы</li>
+                    </ul>
+           </div>
                  <div class="game-screen">
                      <img src="images/street beat/prize.png" alt="Приз" class="prize-badge">
                      <img src="images/street beat/game.png" alt="Выбери правильную модель">
@@ -160,113 +255,117 @@
                      <img src="images/cat/message.png" alt="Сообщение" class="cat-message">
                      <img src="images/cat/sadcat.png" alt="Грустная кошка" class="sad-cat">
                  </div>
-                 <div class="cat-game-info">
-                     <h2>Покорми <br>кошечку</h2>
-                     <p>Милая и увлекательная игра, в которой пользователи кормят виртуального питомца. Отлично подходит для зоомагазинов, ветеринарных клиник и брендов товаров для животных. Создает эмоциональную связь с клиентами.</p>
-                 </div>
-             </div>
-         </div>
+                <div class="cat-game-info">
+                    <h2>Покорми кошечку</h2>
+                    <p>Милая и увлекательная игра, в которой пользователи заботятся о виртуальном питомце, создавая эмоциональную связь с вашим брендом или сервисом.</p>
+                    <ul class="cat-game-features">
+                        <li>Корми питомца</li>
+                        <li>Играй и заботься</li>
+                        <li>Получай бонусы</li>
+                    </ul>
+               </div>
+                </div>
+            </div>
      </section>
 
      <!-- Bubble Game Section -->
      <section class="bubble-game-section">
          <div class="bubble-game-wrapper">
              <div class="bubble-game-content">
-                 <div class="bubble-game-info">
-                     <h2>Лопни</h2>
-                     <p>Динамичная и захватывающая игра, где пользователи лопают пузыри, чтобы получить призы и скидки. Идеально подходит для акций, распродаж и специальных предложений. Вызывает азарт и мотивирует к действию.</p>
-                 </div>
+                <div class="bubble-game-info">
+                    <h2>Лопни</h2>
+                    <p>Динамичная и захватывающая игра, где пользователи лопают пузыри, чтобы получить призы и скидки, тем самым вызывая азарт и мотивируя к покупке.</p>
+                    <ul class="bubble-game-features">
+                        <li><i data-lucide="Bubbles"></i>Лопай шарики</li>
+                        <li><i data-lucide="Bubbles"></i>Открывай сюрпризы</li>
+                        <li><i data-lucide="Bubbles"></i>Забирай скидки</li>
+                    </ul>
+                </div>
                  <div class="bubble-visual">
                      <div class="bubble-phone">
                          <img src="images/bubble/phonescreen.png" alt="Игра Лопни">
                      </div>
                      <img src="images/bubble/congratulation.png" alt="Поздравление" class="congratulation-card">
-                 </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="contact-content">
-            <div class="contact-left">
-                <h3 class="contact-title">Связь с менеджером</h3>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-details">
-                            <p>📞 <a href="tel:+79521006495">+7 (952) 100-64-95</a></p>
-                            <p>📱 Telegram: <a href="https://t.me/FittinSales">@FittinSales</a></p>
-                            <p>👤 Колесников Сергей</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-details">
-                            <p><strong>ООО «Цифровые Технологии»</strong></p>
-                            <p>📍 Россия, г. Воронеж,<br>ул. Карла Маркса, д. 53, офис 23</p>
-                            <p>📞 <a href="tel:88005558623">8-800-555-86-23</a></p>
-                            <p>🌐 <a href="http://fittin.ru">fittin.ru</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-visual">
-                <div class="qr-mockup">
-                    <div class="qr-placeholder">
-                        <img src="images/qrcode.png" alt="QR-код для связи">
-                    </div>
-                    <div class="qr-text">
-                        <p><strong>Сканируйте для перехода</strong></p>
-                        <p>в диалог с нами</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-form">
-                <h3>Обратная связь</h3>
-                <form action="#" method="POST">
+        <div class="contact-container">
+            <div class="contact-form-wrapper">
+                <h2 class="contact-section-title">Обратная связь</h2>
+                <form action="#" method="POST" class="contact-form">
                     <div class="form-group">
-                        <label for="name">Ваше имя</label>
-                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
-                    </div>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
                     <div class="form-group">
                         <label for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+                        <input type="tel" id="phone" name="phone" placeholder="+7-___-___-__-__" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Сообщение</label>
-                        <textarea id="message" name="message" placeholder="Расскажите о вашем проекте..." required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Отправить сообщение</button>
+                        <textarea id="message" name="message" rows="4" placeholder="Расскажите о вашем проекте" maxlength="1000" required></textarea>
+                </div>
+                    <button type="submit" class="submit-button">
+                        <span>Отправить заявку</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
                 </form>
+            </div>
+            <div class="contact-visual">
+                <div class="contact-image-wrapper">
+                    <img src="images/phoneconnect.png" alt="Свяжитесь с нами" class="contact-phone-image">
+                    <div class="contact-decoration"></div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
+        <div id="footer" class="footer-content">
             <div class="footer-about">
                 <h3>FITTIN</h3>
                 <p>Разрабатываем мобильные приложения с геймификацией для роста продаж и привлечения клиентов. Используем современные технологии и AI для создания уникальных решений.</p>
             </div>
             <div class="footer-contacts">
-                <h4>Контакты</h4>
-                <a href="tel:88005558623"><span>☎️</span> 8-800-555-86-23</a>
-                <a href="https://t.me/FittinSales" target="_blank"><span>✈️</span> Telegram</a>
-                <a href="http://fittin.ru" target="_blank"><span>🌐</span> fittin.ru</a>
+                <h4>Контакты менеджера</h4>
+                <a href="tel:+79521006495">
+                    <i data-lucide="phone"></i>
+                    <span>+7 (952) 100-64-95</span>
+                </a>
+                <a href="https://t.me/FittinSales" target="_blank">
+                    <i data-lucide="send"></i>
+                    <span>@FittinSales</span>
+                </a>
+                <div class="contact-person">
+                    <i data-lucide="user"></i>
+                    <span>Колесников Сергей</span>
+                </div>
             </div>
-            <div class="footer-navigation">
-                <h4>Навигация</h4>
-                <a href="#hero"><span>🏠</span> Главная</a>
-                <a href="#features"><span>⭐</span> Преимущества</a>
-                <a href="#games"><span>🎮</span> Игры</a>
-                <a href="#contact"><span>✉️</span> Контакты</a>
+            <div class="footer-company">
+                <h4>Компания</h4>
+                <div class="company-info">
+                    <div class="company-details">
+                        <i data-lucide="map-pin"></i>
+                        <span>Россия, г. Воронеж,<br>ул. Карла Маркса, д. 53, офис 23</span>
+                    </div>
+                    <a href="tel:88005558623">
+                        <i data-lucide="phone"></i>
+                        <span>8-800-555-86-23</span>
+                    </a>
+                    <a href="http://fittin.ru" target="_blank">
+                        <i data-lucide="globe"></i>
+                        <span>fittin.ru</span>
+                    </a>
+            </div>
             </div>
         </div>
         <div class="footer-bottom">
@@ -275,5 +374,8 @@
     </footer>
 
     <script src="index.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

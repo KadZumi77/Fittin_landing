@@ -111,4 +111,57 @@ window.addEventListener('load', () => {
     }, 300);
 });
 
+// Phone mask formatting
+const phoneInput = document.getElementById('phone');
+if (phoneInput) {
+    phoneInput.addEventListener('input', function(e) {
+        let value = e.target.value.replace(/\D/g, ''); // Remove all non-digits
+        
+        // Limit to 11 digits (including 7)
+        if (value.length > 11) {
+            value = value.slice(0, 11);
+        }
+        
+        // Start with +7
+        if (value.length > 0) {
+            if (value[0] === '7' || value[0] === '8') {
+                value = '7' + value.slice(1);
+            } else {
+                value = '7' + value;
+            }
+        }
+        
+        // Format: +7-XXX-XXX-XX-XX
+        let formatted = '+7';
+        if (value.length > 1) {
+            formatted += '-' + value.substring(1, 4);
+        }
+        if (value.length >= 5) {
+            formatted += '-' + value.substring(4, 7);
+        }
+        if (value.length >= 8) {
+            formatted += '-' + value.substring(7, 9);
+        }
+        if (value.length >= 10) {
+            formatted += '-' + value.substring(9, 11);
+        }
+        
+        e.target.value = formatted;
+    });
+    
+    // Set initial value
+    phoneInput.addEventListener('focus', function(e) {
+        if (e.target.value === '') {
+            e.target.value = '+7-';
+        }
+    });
+    
+    // Prevent deletion of +7-
+    phoneInput.addEventListener('keydown', function(e) {
+        if ((e.key === 'Backspace' || e.key === 'Delete') && e.target.value === '+7-') {
+            e.preventDefault();
+        }
+    });
+}
+
 console.log('🎮 FITTIN - Футуристический дизайн готов!');
