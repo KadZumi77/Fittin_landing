@@ -2146,6 +2146,116 @@ footer::after {
 }
 
 @media (max-width: 968px) {
+    header {
+        padding: 16px 24px;
+    }
+
+    .logo img {
+        height: 42px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .cta-header {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Выравнивание по левому краю для мобильной версии */
+    .section-title {
+        text-align: left;
+    }
+
+    .section-subtitle {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .step-item {
+        align-items: center;
+        text-align: center;
+    }
+
+    .game-description {
+        padding-top: 15px;
+        text-align: left;
+    }
+
+    .street-beat-info,
+    .cat-game-info,
+    .bubble-game-info,
+    .advent-calendar-info {
+        text-align: left;
+    }
+
+    .game-features,
+    .street-beat-features,
+    .cat-game-features,
+    .bubble-game-features,
+    .advent-calendar-features {
+        justify-content: flex-start;
+    }
+
+    .game-features li,
+    .street-beat-features li,
+    .cat-game-features li,
+    .bubble-game-features li,
+    .advent-calendar-features li {
+        justify-content: flex-start;
+    }
+
+    .contact-title,
+    .contact-subtitle {
+        text-align: left;
+    }
+
+    /* Уменьшаем жирность заголовков для мобильной версии */
+    .hero-text h1,
+    .section-title,
+    .step-title,
+    .game-description h2,
+    .street-beat-info h2,
+    .cat-game-info h2,
+    .bubble-game-info h2,
+    .advent-calendar-info h2,
+    .contact-title {
+        font-weight: 500;
+    }
+
+    /* Увеличиваем размер основного текста */
+    p,
+    .section-subtitle,
+    .hero-text .subtitle,
+    .game-description p,
+    .street-beat-info p,
+    .cat-game-info p,
+    .bubble-game-info p,
+    .advent-calendar-info p,
+    .contact-subtitle,
+    .step-description {
+        font-size: 18px;
+    }
+
+    .game-features li,
+    .street-beat-features li,
+    .cat-game-features li,
+    .bubble-game-features li,
+    .advent-calendar-features li {
+        font-size: 16px;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         gap: 50px;
@@ -2282,31 +2392,33 @@ footer::after {
     }
 
     .feature-card {
-        padding: 28px 20px;
+        padding: 32px 24px;
     }
 
     .feature-icon {
-        width: 48px;
-        height: 48px;
-        margin-bottom: 16px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
     }
 
     .feature-icon i {
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
     }
 
     .feature-title {
-        font-size: 15px;
+        font-size: 18px;
+        margin-bottom: 14px;
     }
 
     .feature-description {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .hero-text h1,
     .hero-text .highlight {
         font-size: 42px;
+        font-weight: 600;
     }
 
     .section-title {
@@ -2359,6 +2471,10 @@ footer::after {
         padding: 80px 24px;
     }
 
+    .flappy-showcase::before {
+        display: none;
+    }
+
     .contact-form {
         padding: 24px 18px;
     }
@@ -2398,29 +2514,19 @@ footer::after {
     }
 
     .phone-game-mockup {
-        max-width: 260px;
+        max-width: 320px;
+        margin: 0 auto;
     }
 
     .flappy-phone {
         margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .notification-image {
-        position: static;
-        transform: none;
-        margin-top: 30px;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .start-button {
-        width: 65%;
-        max-width: 65%;
-    }
-
-    .game-logo {
-        width: 60%;
-        max-width: 60%;
+        display: none;
     }
 
     .game-description {
@@ -2435,6 +2541,21 @@ footer::after {
         font-size: 16px;
     }
 
+    .street-beat-wrapper,
+    .cat-game-wrapper,
+    .bubble-game-wrapper,
+    .advent-calendar-wrapper {
+        border-radius: 0;
+        max-width: 100%;
+    }
+
+    .street-beat-wrapper::before,
+    .cat-game-wrapper::before,
+    .bubble-game-wrapper::before,
+    .advent-calendar-wrapper::before {
+        border-radius: 0;
+    }
+
     .street-beat-content {
         grid-template-columns: 1fr;
         gap: 50px;
@@ -2442,6 +2563,7 @@ footer::after {
 
     .street-beat-info {
         padding: 30px;
+        margin: 0 24px;
     }
 
     .street-beat-info h2 {
@@ -2449,21 +2571,22 @@ footer::after {
     }
 
     .game-screen {
-        flex-direction: column;
-        gap: 30px;
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
     }
 
     .game-screen img {
-        max-width: 100%;
+        max-width: 240px;
     }
 
     .prize-badge {
-        max-width: 70px;
-        margin-right: 0;
+        max-width: 80px;
+        margin-right: -55px;
     }
 
     .cat-game-section {
-        padding: 80px 24px;
+        padding: 80px 0;
     }
 
     .cat-game-content {
@@ -2477,6 +2600,8 @@ footer::after {
 
     .cat-game-info {
         padding-left: 0;
+        padding: 30px;
+        margin: 0 24px;
     }
 
     .cat-game-info h2 {
@@ -2500,7 +2625,7 @@ footer::after {
     }
 
     .bubble-game-section {
-        padding: 80px 24px;
+        padding: 80px 0;
     }
 
     .bubble-game-content {
@@ -2522,6 +2647,8 @@ footer::after {
 
     .bubble-game-info {
         padding-right: 0;
+        padding: 30px;
+        margin: 0 24px;
     }
 
     .bubble-game-info h2 {
@@ -2529,7 +2656,7 @@ footer::after {
     }
 
     .advent-calendar-section {
-        padding: 80px 24px;
+        padding: 80px 0;
     }
 
     .advent-calendar-content {
@@ -2540,6 +2667,7 @@ footer::after {
     .advent-calendar-info {
         order: 2;
         padding: 30px;
+        margin: 0 24px;
     }
 
     .advent-calendar-visual {
@@ -2569,5 +2697,542 @@ footer::after {
 
     footer {
         padding: 60px 24px 32px;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1000px) {
+    header {
+        padding: 18px 32px;
+    }
+
+    .logo img {
+        height: 46px;
+    }
+
+    nav a {
+        padding: 11px 20px;
+        font-size: 14px;
+    }
+
+    .cta-header {
+        padding: 11px 24px;
+        font-size: 14px;
+    }
+
+    .hero-visual {
+        height: 500px;
+    }
+
+    .phone-mockup img {
+        height: 450px;
+    }
+
+    .widget-overlay {
+        max-width: 480px;
+    }
+
+    /* Уменьшаем геометрические фигуры для планшетов */
+    .shape-1 {
+        width: 160px;
+        height: 160px;
+        top: 12%;
+        left: 8%;
+    }
+
+    .shape-2 {
+        width: 130px;
+        height: 130px;
+        top: 30%;
+        right: 15%;
+    }
+
+    .shape-3 {
+        width: 150px;
+        height: 150px;
+        top: 65%;
+        left: 15%;
+    }
+
+    .hero-text {
+        padding-left: 0px;
+    }
+
+    .hero-text h1 {
+        font-size: 56px;
+    }
+
+    .hero-text .subtitle {
+        font-size: 19px;
+    }
+
+    .section-title {
+        font-size: 44px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .steps-container {
+        gap: 20px;
+    }
+
+    .flappy-content,
+    .street-beat-content,
+    .cat-game-content,
+    .bubble-game-content {
+        gap: 60px;
+    }
+}
+
+/* Mobile - Very Small Screens */
+@media (max-width: 480px) {
+    header {
+        padding: 12px 16px;
+    }
+
+    .logo img {
+        height: 36px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .cta-header {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    /* Выравнивание по левому краю для очень маленьких экранов */
+    .section-title {
+        text-align: left;
+    }
+
+    .section-subtitle {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .step-item {
+        align-items: center;
+        text-align: center;
+    }
+
+    .game-description {
+        text-align: left;
+    }
+
+    .street-beat-info,
+    .cat-game-info,
+    .bubble-game-info,
+    .advent-calendar-info {
+        text-align: left;
+    }
+
+    .game-features,
+    .street-beat-features,
+    .cat-game-features,
+    .bubble-game-features,
+    .advent-calendar-features {
+        justify-content: flex-start;
+    }
+
+    .game-features li,
+    .street-beat-features li,
+    .cat-game-features li,
+    .bubble-game-features li,
+    .advent-calendar-features li {
+        justify-content: flex-start;
+    }
+
+    .contact-title,
+    .contact-subtitle {
+        text-align: left;
+    }
+
+    /* Уменьшаем жирность заголовков для очень маленьких экранов */
+    .section-title,
+    .step-title,
+    .street-beat-info h2,
+    .cat-game-info h2,
+    .bubble-game-info h2,
+    .advent-calendar-info h2,
+    .contact-title {
+        font-weight: 600;
+    }
+
+    /* Увеличиваем размер основного текста */
+    p,
+    .street-beat-info p,
+    .cat-game-info p,
+    .bubble-game-info p,
+    .advent-calendar-info p,
+    .step-description {
+        font-size: 16px;
+    }
+
+    .game-features li,
+    .street-beat-features li,
+    .cat-game-features li,
+    .bubble-game-features li,
+    .advent-calendar-features li {
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: 80px 16px 50px;
+        min-height: auto;
+    }
+
+    .hero-visual {
+        height: 350px;
+    }
+
+    .phone-mockup img {
+        height: 300px;
+    }
+
+    .widget-overlay {
+        max-width: 320px;
+    }
+
+    .phone-container::before {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Еще больше уменьшаем фигуры для маленьких экранов */
+    .shape-1 {
+        width: 70px;
+        height: 70px;
+        top: 8%;
+        left: 3%;
+    }
+
+    .shape-2 {
+        width: 60px;
+        height: 60px;
+        top: 40%;
+        right: 3%;
+    }
+
+    .shape-3 {
+        width: 65px;
+        height: 65px;
+        top: 75%;
+        left: 3%;
+    }
+
+    .hero-text h1,
+    .hero-text .highlight {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .hero-text .subtitle {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .cta-button {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .stat-card {
+        min-width: 130px;
+        padding: 12px 14px;
+    }
+
+    .stat-value {
+        font-size: 20px;
+    }
+
+    .stat-label {
+        font-size: 14px;
+    }
+
+    .features,
+    .how-it-works {
+        padding: 50px 16px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .feature-card {
+        padding: 28px 20px;
+    }
+
+    .feature-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 18px;
+    }
+
+    .feature-icon i {
+        width: 28px;
+        height: 28px;
+    }
+
+    .feature-title {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .feature-description {
+        font-size: 15px;
+    }
+
+    .step-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .step-circle i {
+        width: 28px;
+        height: 28px;
+    }
+
+    .step-title {
+        font-size: 16px;
+    }
+
+    .flappy-showcase {
+        padding: 50px 16px;
+    }
+
+    .flappy-showcase::before {
+        display: none;
+    }
+
+    .phone-game-mockup {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .flappy-phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .notification-image {
+        display: none;
+    }
+
+    /*.game-description h2 {*/
+    /*    font-size: 24px;*/
+    /*    margin-bottom: 16px;*/
+    /*    font-weight: 500;*/
+    /*}*/
+
+    .game-description p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .game-features li {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .street-beat-section,
+    .cat-game-section,
+    .bubble-game-section,
+    .advent-calendar-section {
+        padding: 50px 0;
+    }
+
+    .street-beat-wrapper,
+    .cat-game-wrapper,
+    .bubble-game-wrapper,
+    .advent-calendar-wrapper {
+        padding: 30px 0;
+        border-radius: 0;
+        max-width: 100%;
+    }
+
+    .street-beat-wrapper::before,
+    .cat-game-wrapper::before,
+    .bubble-game-wrapper::before,
+    .advent-calendar-wrapper::before {
+        border-radius: 0;
+    }
+
+    .street-beat-info,
+    .cat-game-info,
+    .bubble-game-info,
+    .advent-calendar-info {
+        padding: 24px;
+        margin: 0 16px;
+    }
+
+    .game-description h2,
+    .street-beat-info h2,
+    .cat-game-info h2,
+    .bubble-game-info h2,
+    .advent-calendar-info h2 {
+        font-size: 24px;
+        margin-bottom: 14px;
+        font-weight: 550;
+    }
+
+    .street-beat-info p,
+    .cat-game-info p,
+    .bubble-game-info p,
+    .advent-calendar-info p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .street-beat-features li,
+    .cat-game-features li,
+    .bubble-game-features li,
+    .advent-calendar-features li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .game-screen {
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .game-screen img {
+        max-width: 200px;
+    }
+
+    .prize-badge {
+        max-width: 70px;
+        margin-right: -45px;
+    }
+
+    .cat-phone img {
+        max-width: 200px;
+    }
+
+    .cat-decorations {
+        gap: 12px;
+    }
+
+    .cat-sad,
+    .cat-group {
+        max-width: 100px;
+    }
+
+    .cat-message {
+        max-width: 130px;
+    }
+
+    .bubble-phone img {
+        max-width: 220px;
+    }
+
+    .calendar-image img {
+        height: 220px;
+    }
+
+    .calendar-image.main-image img {
+        height: 260px;
+    }
+
+    .contact {
+        padding: 50px 16px 70px;
+    }
+
+    .contact-title {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    .contact-subtitle {
+        font-size: 14px;
+    }
+
+    .contact-section-title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .contact-form {
+        padding: 20px 16px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .submit-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .contact-image-wrapper {
+        max-width: 250px;
+    }
+
+    footer {
+        padding: 40px 16px 24px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .footer-about h3 {
+        font-size: 18px;
+    }
+
+    .footer-about p {
+        font-size: 12px;
+    }
+
+    .footer-contacts,
+    .footer-company {
+        padding: 16px;
+    }
+
+    .footer-contacts h4,
+    .footer-company h4 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
     }
 }
