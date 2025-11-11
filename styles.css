@@ -797,6 +797,7 @@ nav a.active::before {
 .phone-game-mockup > img:first-child {
     width: 100%;
     height: auto;
+    border-radius: 24px;
     filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.3));
     position: relative;
     z-index: 1;
@@ -839,7 +840,7 @@ nav a.active::before {
 .notification-image {
     position: absolute;
     top: 40%;
-    right: -300px;
+    left: calc(50% + 140px + 30px);
     transform: translateY(-50%);
     max-width: 380px;
     width: 380px;
@@ -862,7 +863,7 @@ body.loaded .notification-image {
     position: relative;
     z-index: 10;
     color: var(--text-gray);
-    padding-left: 240px;
+    padding-left: 200px;
     padding-top: 60px;
 }
 
@@ -1061,7 +1062,7 @@ body.loaded .notification-image {
 
 .prize-badge {
     max-width: 60px;
-    filter: drop-shadow(0 5px 15px rgba(255, 107, 53, 0.4));
+    filter: drop-shadow(0 5px 10px rgba(255, 107, 53, 0.23));
     margin-right: -65px;
     z-index: 1;
     transform: rotate(-5deg);
@@ -1255,9 +1256,9 @@ body.loaded .prize-badge {
 
 .cat-decorations {
     position: absolute;
-    right: 50%;
+    left: calc(25% + 140px + 10px);
     top: 65%;
-    transform: translate(50%, -50%);
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1325,6 +1326,133 @@ body.loaded .cat-message {
     color: var(--primary-orange);
     flex-shrink: 0;
     stroke-width: 2;
+}
+
+/* Europe Game Section */
+.europe-game-section {
+    padding: 30px 120px;
+    position: relative;
+    z-index: 10;
+    background: #F5F5F7;
+    overflow: visible;
+}
+
+.europe-game-wrapper {
+    margin: 0 auto;
+    position: relative;
+    background-image: url('images/europe/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    padding: 60px;
+    overflow: hidden;
+}
+
+.europe-game-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 0;
+    border-radius: 32px;
+}
+
+.europe-game-section::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(238, 238, 240, 1), rgba(238, 238, 240, 0));
+    z-index: 5;
+}
+
+.europe-game-content {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.europe-game-info {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.63);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+.europe-game-info h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1A1A2E;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.europe-game-info p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2D3748;
+    margin-bottom: 32px;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.europe-game-features {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0 0;
+}
+
+.europe-game-features li {
+    font-size: 18px;
+    color: #2D3748;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    line-height: 1.6;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.europe-game-features li i {
+    width: 20px;
+    height: 20px;
+    color: var(--primary-orange);
+    flex-shrink: 0;
+    stroke-width: 2;
+}
+
+.europe-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.europe-gif {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.europe-gif img {
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    border-radius: 16px;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.3));
 }
 
 /* Bubble Game Section */
@@ -2029,6 +2157,7 @@ footer::after {
     .flappy-showcase,
     .street-beat-section,
     .cat-game-section,
+    .europe-game-section,
     .bubble-game-section,
     .advent-calendar-section,
     .contact,
@@ -2047,12 +2176,21 @@ footer::after {
         overflow: visible;
     }
 
+    .europe-game-section{
+        padding: 30px 40px;
+        overflow: visible;
+    }
+
     .street-beat-wrapper{
         padding: 60px 20px;
     }
 
     .cat-game-wrapper{
         padding: 60px 0;
+    }
+
+    .europe-game-wrapper{
+        padding: 60px 40px;
     }
 
     .bubble-game-wrapper{
@@ -2062,6 +2200,8 @@ footer::after {
     .advent-calendar-wrapper{
         padding: 60px 30px;
     }
+
+
 
     .calendar-image img {
         width: auto;
@@ -2085,7 +2225,11 @@ footer::after {
     }
 
     .cat-decorations {
-        padding-right: 100px;
+        left: calc(20% + 140px);
+    }
+
+    .europe-gif img {
+        max-width: 250px;
     }
 
     .game-screen img {
@@ -2182,7 +2326,7 @@ footer::after {
     }
 
     .step-connector {
-        width: 50px;
+        width: 55px;
     }
 
     .step-circle {
@@ -2273,7 +2417,7 @@ footer::after {
 
     .game-description {
         padding-top: 18px;
-        padding-left: 170px;
+        padding-left: 180px;
         text-align: left;
     }
 
@@ -2282,21 +2426,25 @@ footer::after {
     }
 
     .notification-image {
-        right: -220px;
+        left: calc(50% + 140px + 20px);
         width: 280px;
     }
 
+    .game-features li svg,
     .street-beat-features li svg,
     .cat-game-features li svg,
+    .europe-game-features li svg,
     .bubble-game-features li svg,
     .advent-calendar-features li svg{
         width: 30px;
         height: 30px;
+        flex-shrink: 0;
     }
 
     .flappy-content,
     .street-beat-content,
     .cat-game-content,
+    .europe-game-content,
     .bubble-game-content,
     .advent-calendar-content {
         gap: 50px;
@@ -2309,6 +2457,7 @@ footer::after {
     .game-description h2,
     .street-beat-info h2,
     .cat-game-info h2,
+    .europe-game-info h2,
     .bubble-game-info h2,
     .advent-calendar-info h2 {
         font-size: 38px;
@@ -2396,6 +2545,7 @@ footer::after {
 
     .street-beat-info,
     .cat-game-info,
+    .europe-game-info,
     .bubble-game-info,
     .advent-calendar-info {
         text-align: left;
@@ -2404,6 +2554,7 @@ footer::after {
     .game-features,
     .street-beat-features,
     .cat-game-features,
+    .europe-game-features,
     .bubble-game-features,
     .advent-calendar-features {
         justify-content: flex-start;
@@ -2412,6 +2563,7 @@ footer::after {
     .game-features li,
     .street-beat-features li,
     .cat-game-features li,
+    .europe-game-features li,
     .bubble-game-features li,
     .advent-calendar-features li {
         justify-content: flex-start;
@@ -2429,6 +2581,7 @@ footer::after {
     .game-description h2,
     .street-beat-info h2,
     .cat-game-info h2,
+    .europe-game-info h2,
     .bubble-game-info h2,
     .advent-calendar-info h2,
     .contact-title {
@@ -2440,6 +2593,7 @@ footer::after {
     .game-description p,
     .street-beat-info p,
     .cat-game-info p,
+    .europe-game-info p,
     .bubble-game-info p,
     .advent-calendar-info p,
     .contact-subtitle,
@@ -2463,6 +2617,7 @@ footer::after {
     .game-features li,
     .street-beat-features li,
     .cat-game-features li,
+    .europe-game-features li,
     .bubble-game-features li,
     .advent-calendar-features li {
         font-size: 22px;
@@ -2471,6 +2626,7 @@ footer::after {
     .street-beat-features li svg,
     .game-features li svg,
     .cat-game-features li svg,
+    .europe-game-features li svg,
     .bubble-game-features li svg,
     .advent-calendar-features li svg{
         width: 30px;
@@ -2806,6 +2962,8 @@ footer::after {
     .street-beat-section::after,
     .cat-game-section::before,
     .cat-game-section::after,
+    .europe-game-section::before,
+    .europe-game-section::after,
     .bubble-game-section::before,
     .bubble-game-section::after,
     .advent-calendar-section::before,
@@ -2824,7 +2982,8 @@ footer::after {
         padding-bottom: 40px;
     }
 
-    .cat-game-section {
+    .cat-game-section,
+    .europe-game-section {
         border-bottom: 5px dashed #B8BABD;
         padding-bottom: 0;
     }
@@ -3006,6 +3165,40 @@ footer::after {
         font-size: 36px;
     }
 
+    .europe-game-section {
+        padding: 0;
+    }
+
+    .europe-game-wrapper {
+        padding: 60px 20px;
+        border-radius: 0;
+        border: none;
+    }
+
+    .europe-game-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .europe-game-info {
+        order: 2;
+        padding: 30px;
+        margin: 0 20px;
+    }
+
+    .europe-game-info h2 {
+        font-size: 36px;
+    }
+
+    .europe-visual {
+        order: 1;
+    }
+
+    .europe-gif img {
+        max-width: 300px;
+    }
+
     .bubble-game-section {
         padding: 0;
     }
@@ -3158,6 +3351,7 @@ footer::after {
 
     .street-beat-info,
     .cat-game-info,
+    .europe-game-info,
     .bubble-game-info,
     .advent-calendar-info {
         text-align: left;
@@ -3182,6 +3376,7 @@ footer::after {
     .game-features,
     .street-beat-features,
     .cat-game-features,
+    .europe-game-features,
     .bubble-game-features,
     .advent-calendar-features {
         justify-content: flex-start;
@@ -3190,13 +3385,16 @@ footer::after {
     .game-features li,
     .street-beat-features li,
     .cat-game-features li,
+    .europe-game-features li,
     .bubble-game-features li,
     .advent-calendar-features li {
         justify-content: flex-start;
     }
 
+    .game-features li svg,
     .street-beat-features li svg,
     .cat-game-features li svg,
+    .europe-game-features li svg,
     .bubble-game-features li svg,
     .advent-calendar-features li svg{
         width: 25px;
@@ -3213,6 +3411,7 @@ footer::after {
     .step-title,
     .street-beat-info h2,
     .cat-game-info h2,
+    .europe-game-info h2,
     .bubble-game-info h2,
     .advent-calendar-info h2,
     .contact-title {
@@ -3223,6 +3422,7 @@ footer::after {
     p,
     .street-beat-info p,
     .cat-game-info p,
+    .europe-game-info p,
     .bubble-game-info p,
     .advent-calendar-info p,
     .step-description {
@@ -3230,6 +3430,7 @@ footer::after {
     }
 
     .cat-game-features li,
+    .europe-game-features li,
     .bubble-game-features li,
     .advent-calendar-features li {
         font-size: 16px;
@@ -3443,6 +3644,8 @@ footer::after {
     .street-beat-section::after,
     .cat-game-section::before,
     .cat-game-section::after,
+    .europe-game-section::before,
+    .europe-game-section::after,
     .bubble-game-section::before,
     .bubble-game-section::after,
     .advent-calendar-section::before,
@@ -3456,6 +3659,7 @@ footer::after {
     .flappy-showcase,
     .street-beat-section,
     .cat-game-section,
+    .europe-game-section,
     .bubble-game-section,
     .advent-calendar-section {
         border-bottom: 4px dashed #B8BABD;
@@ -3490,6 +3694,7 @@ footer::after {
 
     .street-beat-section,
     .cat-game-section,
+    .europe-game-section,
     .bubble-game-section,
     .advent-calendar-section {
         padding: 0;
@@ -3499,8 +3704,33 @@ footer::after {
         background: rgba(220, 221, 222, 0.61);
     }
 
+    .europe-game-section {
+        background-image: url('images/europe/background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .europe-game-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.4);
+        z-index: 1;
+    }
+
+    .europe-game-wrapper {
+        position: relative;
+        z-index: 2;
+    }
+
     .street-beat-wrapper,
     .cat-game-wrapper,
+    .europe-game-wrapper,
     .bubble-game-wrapper,
     .advent-calendar-wrapper {
         padding: 30px 0;
@@ -3516,11 +3746,43 @@ footer::after {
         border: none;
     }
 
+    .europe-game-wrapper {
+        background: none;
+        border-radius: 0;
+        padding: 40px 0;
+    }
+
     .street-beat-wrapper::before,
     .cat-game-wrapper::before,
+    .europe-game-wrapper::before,
     .bubble-game-wrapper::before,
     .advent-calendar-wrapper::before {
         border-radius: 0 !important;
+    }
+
+    .europe-game-content {
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .europe-game-info {
+        order: 2;
+        padding: 24px 20px;
+        margin: 0 20px;
+    }
+
+    .europe-game-info h2 {
+        font-size: 28px;
+    }
+
+    .europe-visual {
+        order: 1;
+    }
+
+    .europe-gif img {
+        max-width: 230px;
     }
 
     .cat-game-info {
@@ -3546,6 +3808,7 @@ footer::after {
     .game-description h2,
     .street-beat-info h2,
     .cat-game-info h2,
+    .europe-game-info h2,
     .bubble-game-info h2,
     .advent-calendar-info h2 {
         font-size: 24px;
@@ -3555,6 +3818,7 @@ footer::after {
 
     .street-beat-info p,
     .cat-game-info p,
+    .europe-game-info p,
     .bubble-game-info p,
     .advent-calendar-info p {
         font-size: 16px;
@@ -3563,6 +3827,7 @@ footer::after {
 
     .street-beat-features li,
     .cat-game-features li,
+    .europe-game-features li,
     .bubble-game-features li,
     .advent-calendar-features li {
         font-size: 16px;
