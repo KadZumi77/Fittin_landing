@@ -4,424 +4,398 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FITTIN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="grid-overlay"></div>
+<!-- Animated Background -->
+<div class="animated-bg">
+    <div class="grid-overlay"></div>
+</div>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <a href="#hero" class="logo">
+            <img src="images/logo.svg" alt="FITTIN">
+        </a>
+        <nav>
+            <a href="#features">Преимущества</a>
+            <a href="#games">Игры</a>
+            <a href="#footer">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <!-- Geometric Shapes -->
+    <div class="geometric-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
     </div>
 
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <a href="#hero" class="logo">
-                <img src="images/logo.svg" alt="FITTIN">
-            </a>
-            <nav>
-                <a href="#features">Преимущества</a>
-                <a href="#games">Игры</a>
-                <a href="#footer">Контакты</a>
-                <a href="#contact" class="cta-header">Связь</a>
-            </nav>
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Геймификация <br><span class="highlight">в&nbsp;мобильном приложении</span></h1>
+            <p class="subtitle">Инструмент роста продаж, узнаваемости бренда и&nbsp;привлечения новых клиентов</p>
+            <a href="#contact" class="cta-button">Связаться с&nbsp;нами</a>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <!-- Geometric Shapes -->
-        <div class="geometric-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Геймификация <br><span class="highlight">в&nbsp;мобильном приложении</span></h1>
-                <p class="subtitle">Инструмент роста продаж, узнаваемости бренда и&nbsp;привлечения новых клиентов</p>
-                <a href="#contact" class="cta-button">Связаться с&nbsp;нами</a>
+        <div class="hero-visual">
+            <div class="phone-container">
+                <div class="phone-mockup">
+                    <img src="images/iphone15pro.webp" alt="iPhone 15 Pro">
+                </div>
+                <div class="widget-overlay">
+                    <img src="images/widget.webp" alt="Игровой виджет">
+                </div>
             </div>
-            <div class="hero-visual">
-                <div class="phone-container">
-                    <div class="phone-mockup">
-                        <img src="images/iphone15pro.png" alt="iPhone 15 Pro">
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="trending-up"></i>
                     </div>
-                    <div class="widget-overlay">
-                        <img src="images/widget.png" alt="Игровой виджет">
+                    <div class="stat-content">
+                        <div class="stat-value">+150%</div>
+                        <div class="stat-label">Рост продаж</div>
                     </div>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i data-lucide="trending-up"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="stat-value">+150%</div>
-                            <div class="stat-label">Рост продаж</div>
-                        </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="users"></i>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i data-lucide="users"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="stat-value">10K+</div>
-                            <div class="stat-label">Новых клиентов</div>
-                        </div>
+                    <div class="stat-content">
+                        <div class="stat-value">10K+</div>
+                        <div class="stat-label">Новых клиентов</div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i data-lucide="gamepad-2"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="stat-value">+85%</div>
-                            <div class="stat-label">Вовлеченность</div>
-                        </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="gamepad-2"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">+85%</div>
+                        <div class="stat-label">Вовлеченность</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2 class="section-title">Преимущества геймификации</h2>
-        <p class="section-subtitle">Увеличивайте прибыль и&nbsp;лояльность клиентов через игровые механики</p>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i data-lucide="shopping-cart"></i>
-                </div>
-                <h3 class="feature-title">Увеличение чека</h3>
-                <p class="feature-description">Рост среднего чека и&nbsp;частоты покупок</p>
+<!-- Features Section -->
+<section id="features" class="features">
+    <h2 class="section-title">Преимущества геймификации</h2>
+    <p class="section-subtitle">Увеличивайте прибыль и&nbsp;лояльность клиентов через игровые механики</p>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i data-lucide="shopping-cart"></i>
             </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i data-lucide="repeat"></i>
-                </div>
-                <h3 class="feature-title">Повторные покупки</h3>
-                <p class="feature-description">Мотивация клиентов возвращаться снова</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i data-lucide="smartphone"></i>
-                </div>
-                <h3 class="feature-title">Вовлеченность</h3>
-                <p class="feature-description">Игровой опыт привлекает внимание</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i data-lucide="clock"></i>
-                </div>
-                <h3 class="feature-title">Время в&nbsp;приложении</h3>
-                <p class="feature-description">Увеличение времени взаимодействия</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i data-lucide="heart"></i>
-                </div>
-                <h3 class="feature-title">Формирование привычки</h3>
-                <p class="feature-description">Создание регулярной активности</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i data-lucide="award"></i>
-                </div>
-                <h3 class="feature-title">Система наград</h3>
-                <p class="feature-description">Персональные достижения и&nbsp;уровни</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works">
-        <h2 class="section-title">Как это работает?</h2>
-        
-        <div class="steps-container">
-            <div class="step-item">
-                <div class="step-circle">
-                    <i data-lucide="search"></i>
-                </div>
-                <h3 class="step-title">Анализ и&nbsp;планирование</h3>
-                <p class="step-description">Изучаем ваш бизнес, определяем ключевые метрики успеха.</p>
-            </div>
-
-            <div class="step-connector"></div>
-
-            <div class="step-item">
-                <div class="step-circle">
-                    <i data-lucide="palette"></i>
-                </div>
-                <h3 class="step-title">Дизайн механик</h3>
-                <p class="step-description">Создаем увлекательные игры и&nbsp;систему вознаграждений.</p>
-            </div>
-
-            <div class="step-connector"></div>
-
-            <div class="step-item">
-                <div class="step-circle active">
-                    <i data-lucide="code"></i>
-                </div>
-                <h3 class="step-title">Разработка</h3>
-                <p class="step-description">Разрабатываем игровые модули и&nbsp;интегрируем их&nbsp;в&nbsp;ваше приложение.</p>
-            </div>
-
-            <div class="step-connector"></div>
-
-            <div class="step-item">
-                <div class="step-circle">
-                    <i data-lucide="rocket"></i>
-                </div>
-                <h3 class="step-title">Запуск</h3>
-                <p class="step-description">Запускаем геймификацию и&nbsp;постоянно оптимизируем результаты.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Flappy Bird Showcase -->
-    <section id="games" class="flappy-showcase">
-        <!-- Purple Geometric Shapes -->
-        <div class="flappy-shapes">
-            <div class="purple-shape purple-shape-1"></div>
-            <div class="purple-shape purple-shape-2"></div>
-            <div class="purple-shape purple-shape-3"></div>
+            <h3 class="feature-title">Увеличение чека</h3>
+            <p class="feature-description">Рост среднего чека и&nbsp;частоты покупок</p>
         </div>
 
-        <h2 class="section-title">Наши игровые механики</h2>
-        <p class="section-subtitle">Выберите подходящие игры для вашего бизнеса и&nbsp;начните привлекать клиентов</p>
-        <div class="flappy-content">
-            <div class="flappy-phone">
-                <div class="phone-game-mockup">
-                    <img src="images/Flappy bird/flappybird.gif" alt="Flappy Bird Game">
-                </div>
-                <img src="images/Flappy bird/notifications.png" alt="Уведомление" class="notification-image">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i data-lucide="repeat"></i>
             </div>
-            <div class="game-description">
-                <h2>Flappy bird</h2>
-                <p>Адаптируем культовую игру под ваш бизнес. Простая механика и&nbsp;увлекательный геймплей привлекают внимание и&nbsp;удерживают пользователей в&nbsp;приложении.</p>
-                <ul class="game-features">
-                    <li><i data-lucide="twitter"></i>Тапай и&nbsp;взлетай</li>
-                    <li><i data-lucide="twitter"></i>Избегай препятствий</li>
-                    <li><i data-lucide="twitter"></i>Бей рекорды и&nbsp;забирай призы</li>
+            <h3 class="feature-title">Повторные покупки</h3>
+            <p class="feature-description">Мотивация клиентов возвращаться снова</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i data-lucide="smartphone"></i>
+            </div>
+            <h3 class="feature-title">Вовлеченность</h3>
+            <p class="feature-description">Игровой опыт привлекает внимание</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i data-lucide="clock"></i>
+            </div>
+            <h3 class="feature-title">Время в&nbsp;приложении</h3>
+            <p class="feature-description">Увеличение времени взаимодействия</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i data-lucide="heart"></i>
+            </div>
+            <h3 class="feature-title">Формирование привычки</h3>
+            <p class="feature-description">Создание регулярной активности</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i data-lucide="award"></i>
+            </div>
+            <h3 class="feature-title">Система наград</h3>
+            <p class="feature-description">Персональные достижения и&nbsp;уровни</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+    <h2 class="section-title">Как это работает?</h2>
+
+    <div class="steps-container">
+        <div class="step-item">
+            <div class="step-circle">
+                <i data-lucide="search"></i>
+            </div>
+            <h3 class="step-title">Анализ и&nbsp;планирование</h3>
+            <p class="step-description">Изучаем ваш бизнес, определяем ключевые метрики успеха.</p>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step-item">
+            <div class="step-circle">
+                <i data-lucide="palette"></i>
+            </div>
+            <h3 class="step-title">Дизайн механик</h3>
+            <p class="step-description">Создаем увлекательные игры и&nbsp;систему вознаграждений.</p>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step-item">
+            <div class="step-circle active">
+                <i data-lucide="code"></i>
+            </div>
+            <h3 class="step-title">Разработка</h3>
+            <p class="step-description">Разрабатываем игровые модули и&nbsp;интегрируем их&nbsp;в&nbsp;ваше
+                приложение.</p>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step-item">
+            <div class="step-circle">
+                <i data-lucide="rocket"></i>
+            </div>
+            <h3 class="step-title">Запуск</h3>
+            <p class="step-description">Запускаем геймификацию и&nbsp;постоянно оптимизируем результаты.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Flappy Bird Showcase -->
+<section id="games" class="flappy-showcase">
+    <!-- Purple Geometric Shapes -->
+    <div class="flappy-shapes">
+        <div class="purple-shape purple-shape-1"></div>
+        <div class="purple-shape purple-shape-2"></div>
+        <div class="purple-shape purple-shape-3"></div>
+    </div>
+
+    <h2 class="section-title">Наши игровые механики</h2>
+    <p class="section-subtitle">Выберите подходящие игры для вашего бизнеса и&nbsp;начните привлекать клиентов</p>
+    <div class="flappy-content">
+        <div class="flappy-phone">
+            <div class="phone-game-mockup">
+                <img src="images/Flappy bird/flappybird.gif" alt="Flappy Bird Game">
+            </div>
+            <img src="images/Flappy bird/notifications.webp" alt="Уведомление" class="notification-image">
+        </div>
+        <div class="game-description">
+            <h2>Flappy bird</h2>
+            <p>Адаптируем культовую игру под ваш бизнес. Простая механика и&nbsp;увлекательный геймплей привлекают
+                внимание и&nbsp;удерживают пользователей в&nbsp;приложении.</p>
+            <ul class="game-features">
+                <li><i data-lucide="twitter"></i>Тапай и&nbsp;взлетай</li>
+                <li><i data-lucide="twitter"></i>Избегай препятствий</li>
+                <li><i data-lucide="twitter"></i>Бей рекорды и&nbsp;забирай призы</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Street Beat Game Section -->
+<section class="street-beat-section">
+    <div class="street-beat-wrapper">
+        <div class="street-beat-content">
+            <div class="street-beat-info">
+                <h2>Выбери <br>верную модель</h2>
+                <h3>Сделано для Street Beat</h3>
+                <p>Интерактивная игра, где клиенты угадывают продукт из&nbsp;вашего ассортимента и&nbsp;получают
+                    вознаграждения.</p>
+                <ul class="street-beat-features">
+                    <li><i data-lucide="shirt"></i>Изучай товары</li>
+                    <li><i data-lucide="shirt"></i>Развивай внимательность</li>
+                    <li><i data-lucide="shirt"></i>Копи баллы</li>
                 </ul>
-                </div>
             </div>
-     </section>
-
-     <!-- Street Beat Game Section -->
-     <section class="street-beat-section">
-         <div class="street-beat-wrapper">
-             <div class="street-beat-content">
-                <div class="street-beat-info">
-                    <h2>Выбери <br>верную модель</h2>
-                    <p>Интерактивная игра, где клиенты угадывают продукт из&nbsp;вашего ассортимента и&nbsp;получают вознаграждения.</p>
-                    <ul class="street-beat-features">
-                        <li><i data-lucide="shirt"></i>Изучай товары</li>
-                        <li><i data-lucide="shirt"></i>Развивай внимательность</li>
-                        <li><i data-lucide="shirt"></i>Копи баллы</li>
-                    </ul>
-           </div>
-                 <div class="game-screen">
-                     <img src="images/street beat/prize.png" alt="Приз" class="prize-badge">
-                     <img src="images/street beat/streetbeat.gif" alt="Выбери правильную модель">
-                </div>
-                </div>
+            <div class="game-screen">
+                <img src="images/street beat/prize.webp" alt="Приз" class="prize-badge">
+                <img src="images/street beat/streetbeat.gif" alt="Выбери правильную модель">
             </div>
-     </section>
+        </div>
+    </div>
+</section>
 
-     <!-- Cat Game Section -->
-     <section class="cat-game-section">
-         <div class="cat-game-wrapper">
-             <div class="cat-game-content">
-                 <div class="cat-phone">
-                     <img src="images/cat/phonegame.png" alt="Покорми кошечку">
-                </div>
-                 <div class="cat-decorations">
-                     <img src="images/cat/message.png" alt="Сообщение" class="cat-message">
-                     <img src="images/cat/sadcat.png" alt="Грустная кошка" class="sad-cat">
-                 </div>
-                <div class="cat-game-info">
-                    <h2>Покорми кошечку</h2>
-                    <p>Милая и&nbsp;увлекательная игра, в&nbsp;которой пользователи заботятся о&nbsp;виртуальном питомце, создавая эмоциональную связь с&nbsp;вашим брендом или сервисом.</p>
-                    <ul class="cat-game-features">
-                        <li><i data-lucide="paw-print"></i>Корми питомца</li>
-                        <li><i data-lucide="paw-print"></i>Играй и&nbsp;заботься</li>
-                        <li><i data-lucide="paw-print"></i>Получай бонусы</li>
-                    </ul>
-               </div>
-                </div>
+<!-- Cat Game Section -->
+<section class="cat-game-section">
+    <div class="cat-game-wrapper">
+        <div class="cat-game-content">
+            <div class="cat-phone">
+                <img src="images/cat/phonegame.webp" alt="Покорми кошечку">
             </div>
-     </section>
-
-     <!-- Find Pair Game Section -->
-     <section class="europe-game-section">
-         <div class="europe-game-wrapper">
-             <div class="europe-game-content">
-                <div class="europe-game-info">
-                     <h2>Найди пару</h2>
-                     <p>Захватывающая игра на&nbsp;память и&nbsp;внимательность, где&nbsp;пользователи переворачивают карточки в&nbsp;поисках парных изображений. Увлекательная механика мотивирует возвращаться снова и&nbsp;снова!</p>
-                     <ul class="europe-game-features">
-                         <li><i data-lucide="citrus"></i>Открывай карточки</li>
-                         <li><i data-lucide="citrus"></i>Находи совпадения</li>
-                         <li><i data-lucide="citrus"></i>Выигрывай призы</li>
-                     </ul>
-                </div>
-                 <div class="europe-visual">
-                     <div class="europe-gif">
-                         <img src="images/europe/europe.gif" alt="Найди пару">
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
-
-     <!-- Bubble Game Section -->
-     <section class="bubble-game-section">
-         <div class="bubble-game-wrapper">
-             <div class="bubble-game-content">
-                <div class="bubble-game-info">
-                    <h2>Лопни</h2>
-                    <p>Динамичная и&nbsp;захватывающая игра, где пользователи лопают пузыри, чтобы получить призы и&nbsp;скидки, тем самым вызывая азарт и&nbsp;мотивируя к&nbsp;покупке.</p>
-                    <ul class="bubble-game-features">
-                        <li><i data-lucide="Bubbles"></i>Лопай шарики</li>
-                        <li><i data-lucide="Bubbles"></i>Открывай сюрпризы</li>
-                        <li><i data-lucide="Bubbles"></i>Забирай скидки</li>
-                    </ul>
-                </div>
-                 <div class="bubble-visual">
-                     <div class="bubble-phone">
-                         <img src="images/bubble/phonescreen.png" alt="Игра Лопни">
-                     </div>
-                     <img src="images/bubble/congratulation.png" alt="Поздравление" class="congratulation-card">
-                </div>
-                </div>
+            <div class="cat-decorations">
+                <img src="images/cat/message.webp" alt="Сообщение" class="cat-message">
+                <img src="images/cat/sadcat.webp" alt="Грустная кошка" class="sad-cat">
             </div>
-    </section>
+            <div class="cat-game-info">
+                <h2>Покорми кошечку</h2>
+                <p>Милая и&nbsp;увлекательная игра, в&nbsp;которой пользователи заботятся о&nbsp;виртуальном питомце,
+                    создавая эмоциональную связь с&nbsp;вашим брендом или сервисом.</p>
+                <ul class="cat-game-features">
+                    <li><i data-lucide="paw-print"></i>Корми питомца</li>
+                    <li><i data-lucide="paw-print"></i>Играй и&nbsp;заботься</li>
+                    <li><i data-lucide="paw-print"></i>Получай бонусы</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Advent Calendar Section -->
-    <section class="advent-calendar-section">
-        <div class="advent-calendar-wrapper">
-            <div class="advent-calendar-content">
-                <div class="advent-calendar-visual">
-                    <div class="calendar-images">
-                        <div class="calendar-image">
-                            <img src="images/event calendar/calendar1.png" alt="Адвент календарь 1">
-                        </div>
-                        <div class="calendar-image main-image">
-                            <img src="images/event calendar/calendar2.png" alt="Адвент календарь 2">
-                        </div>
-                        <div class="calendar-image">
-                            <img src="images/event calendar/calendar3.png" alt="Адвент календарь 3">
-                        </div>
-                    </div>
-                </div>
-                <div class="advent-calendar-info">
-                    <h2>Адвент календари</h2>
-                    <p>Увлекательная механика, где каждый день открывается новый сюрприз. Идеально подходит для праздничных акций и&nbsp;долгосрочного вовлечения клиентов.</p>
-                    <ul class="advent-calendar-features">
-                        <li><i data-lucide="calendar-days"></i>Открывай ежедневно</li>
-                        <li><i data-lucide="calendar-days"></i>Получай подарки</li>
-                        <li><i data-lucide="calendar-days"></i>Копи бонусы</li>
-                    </ul>
+<!-- Find Pair Game Section -->
+<section class="europe-game-section">
+    <div class="europe-game-wrapper">
+        <div class="europe-game-content">
+            <div class="europe-game-info">
+                <h2>Найди пару</h2>
+                <h3>Сделано для "Европа маркет"</h3>
+                <p>Захватывающая игра на&nbsp;память и&nbsp;внимательность, где&nbsp;пользователи переворачивают
+                    карточки в&nbsp;поисках парных изображений. Увлекательная механика мотивирует возвращаться снова и&nbsp;снова!</p>
+                <ul class="europe-game-features">
+                    <li><i data-lucide="citrus"></i>Открывай карточки</li>
+                    <li><i data-lucide="citrus"></i>Находи совпадения</li>
+                    <li><i data-lucide="citrus"></i>Выигрывай призы</li>
+                </ul>
+            </div>
+            <div class="europe-visual">
+                <div class="europe-gif">
+                    <img src="images/europe/europe.gif" alt="Найди пару">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <div class="contact-form-wrapper">
-                <h2 class="contact-section-title">Обратная связь</h2>
-                <form action="#" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Имя</label>
-                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                </div>
-                    <div class="form-group">
-                        <label for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+7-___-___-__-__" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Сообщение</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Расскажите о&nbsp;вашем проекте" maxlength="1000" required></textarea>
-                </div>
-                    <button type="submit" class="submit-button">
-                        <span>Отправить заявку</span>
-                        <i data-lucide="arrow-right"></i>
-                    </button>
-                </form>
+<!-- Bubble Game Section -->
+<section class="bubble-game-section">
+    <div class="bubble-game-wrapper">
+        <div class="bubble-game-content">
+            <div class="bubble-game-info">
+                <h2>Лопни</h2>
+                <p>Динамичная и&nbsp;захватывающая игра, где пользователи лопают пузыри, чтобы получить призы и&nbsp;скидки,
+                    тем самым вызывая азарт и&nbsp;мотивируя к&nbsp;покупке.</p>
+                <ul class="bubble-game-features">
+                    <li><i data-lucide="Bubbles"></i>Лопай шарики</li>
+                    <li><i data-lucide="Bubbles"></i>Открывай сюрпризы</li>
+                    <li><i data-lucide="Bubbles"></i>Забирай скидки</li>
+                </ul>
             </div>
-            <div class="contact-visual">
-                <div class="contact-image-wrapper">
-                    <img src="images/phoneconnect.png" alt="Свяжитесь с нами" class="contact-phone-image">
-                    <div class="contact-decoration"></div>
+            <div class="bubble-visual">
+                <div class="bubble-phone">
+                    <img src="images/bubble/phonescreen.webp" alt="Игра Лопни">
                 </div>
+                <img src="images/bubble/congratulation.webp" alt="Поздравление" class="congratulation-card">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div id="footer" class="footer-content">
-            <div class="footer-about">
-                <h3>FITTIN</h3>
-                <p>Разрабатываем мобильные приложения с&nbsp;геймификацией для роста продаж и&nbsp;привлечения клиентов. Используем современные технологии и&nbsp;AI для создания уникальных решений.</p>
+<!-- Advent Calendar Section -->
+<section class="advent-calendar-section">
+    <div class="advent-calendar-wrapper">
+        <div class="advent-calendar-content">
+            <div class="advent-calendar-visual">
+                <div class="calendar-images">
+                    <div class="calendar-image">
+                        <img src="images/event calendar/calendar1.webp" alt="Адвент календарь 1">
+                    </div>
+                    <div class="calendar-image main-image">
+                        <img src="images/event calendar/calendar.gif" alt="Адвент календарь 2">
+                    </div>
+                    <div class="calendar-image">
+                        <img src="images/event calendar/calendar3.webp" alt="Адвент календарь 3">
+                    </div>
+                </div>
             </div>
-            <div class="footer-contacts">
-                <h4>Контакты менеджера</h4>
-                <a href="tel:+79521006495">
+            <div class="advent-calendar-info">
+                <h2>Адвент календари</h2>
+                <h3>Сделано для "Вольный странник"</h3>
+                <p>Увлекательная механика, где каждый день открывается новый сюрприз. Идеально подходит для праздничных
+                    акций и&nbsp;долгосрочного вовлечения клиентов.</p>
+                <ul class="advent-calendar-features">
+                    <li><i data-lucide="calendar-days"></i>Открывай ежедневно</li>
+                    <li><i data-lucide="calendar-days"></i>Получай подарки</li>
+                    <li><i data-lucide="calendar-days"></i>Копи бонусы</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div id="footer" class="footer-content">
+        <div class="footer-about">
+            <h3>FITTIN</h3>
+            <p>Разрабатываем мобильные приложения с&nbsp;геймификацией для роста продаж и&nbsp;привлечения клиентов.
+                Используем современные технологии и&nbsp;AI для создания уникальных решений.</p>
+        </div>
+        <div class="footer-contacts">
+            <h4>Контакты менеджера</h4>
+            <a href="tel:+79521006495">
+                <i data-lucide="phone"></i>
+                <span>+7 (952) 100-64-95</span>
+            </a>
+            <a href="https://t.me/FittinSales" target="_blank">
+                <i data-lucide="send"></i>
+                <span>@FittinSales</span>
+            </a>
+            <div class="contact-person">
+                <i data-lucide="user"></i>
+                <span>Колесников Сергей</span>
+            </div>
+        </div>
+        <div class="footer-company">
+            <h4>Компания</h4>
+            <div class="company-info">
+                <div class="company-details">
+                    <i data-lucide="map-pin"></i>
+                    <span>Россия, г.&nbsp;Воронеж,<br>ул.&nbsp;Карла Маркса, д.&nbsp;53, офис&nbsp;23</span>
+                </div>
+                <a href="tel:88005558623">
                     <i data-lucide="phone"></i>
-                    <span>+7 (952) 100-64-95</span>
+                    <span>8-800-555-86-23</span>
                 </a>
-                <a href="https://t.me/FittinSales" target="_blank">
-                    <i data-lucide="send"></i>
-                    <span>@FittinSales</span>
+                <a href="http://fittin.ru" target="_blank">
+                    <i data-lucide="globe"></i>
+                    <span>fittin.ru</span>
                 </a>
-                <div class="contact-person">
-                    <i data-lucide="user"></i>
-                    <span>Колесников Сергей</span>
-                </div>
-            </div>
-            <div class="footer-company">
-                <h4>Компания</h4>
-                <div class="company-info">
-                    <div class="company-details">
-                        <i data-lucide="map-pin"></i>
-                        <span>Россия, г.&nbsp;Воронеж,<br>ул.&nbsp;Карла Маркса, д.&nbsp;53, офис&nbsp;23</span>
-                    </div>
-                    <a href="tel:88005558623">
-                        <i data-lucide="phone"></i>
-                        <span>8-800-555-86-23</span>
-                    </a>
-                    <a href="http://fittin.ru" target="_blank">
-                        <i data-lucide="globe"></i>
-                        <span>fittin.ru</span>
-                    </a>
-            </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2025 ООО «Цифровые Технологии». Все права защищены.</p>
-        </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 ООО «Цифровые Технологии». Все права защищены.</p>
+    </div>
+</footer>
 
-    <script src="index.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
+<script src="index.js"></script>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>

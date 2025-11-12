@@ -475,6 +475,7 @@ nav a.active::before {
     align-items: center;
     justify-content: center;
     z-index: 2;
+    min-height: 550px;
 }
 
 .phone-container::before {
@@ -506,8 +507,11 @@ nav a.active::before {
     z-index: 2;
     width: 130%;
     max-width: 580px;
-    animation: scaleWidget 2.5s ease-in-out infinite;
     will-change: transform;
+}
+
+body.loaded .widget-overlay {
+    animation: scaleWidget 2.5s ease-in-out infinite;
 }
 
 .widget-overlay img {
@@ -1012,7 +1016,7 @@ body.loaded .notification-image {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
-    background-image: url('images/street beat/background.png');
+    background-image: url('images/street beat/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1101,7 +1105,7 @@ body.loaded .prize-badge {
     font-size: 48px;
     font-weight: 700;
     color: #1A1A2E;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
 }
@@ -1198,7 +1202,7 @@ body.loaded .prize-badge {
     margin: 0 auto;
     position: relative;
     background: rgba(220, 221, 222, 0.7);
-    background-image: url('images/cat/background.png');
+    background-image: url('images/cat/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1340,13 +1344,14 @@ body.loaded .cat-message {
 .europe-game-wrapper {
     margin: 0 auto;
     position: relative;
-    background-image: url('images/europe/background.jpg');
+    background-image: url('images/europe/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 32px;
     padding: 60px;
     overflow: hidden;
+    border: 1px solid #D1D5DB;
 }
 
 .europe-game-wrapper::before {
@@ -1381,7 +1386,7 @@ body.loaded .cat-message {
     align-items: center;
 }
 
-.europe-game-info {
+.europe-game-info{
     position: relative;
     z-index: 10;
     background: rgba(255, 255, 255, 0.63);
@@ -1395,9 +1400,17 @@ body.loaded .cat-message {
     font-size: 48px;
     font-weight: 700;
     color: #1A1A2E;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.europe-game-info h3,
+.street-beat-info h3,
+.advent-calendar-info h3{
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.8;
 }
 
 .europe-game-info p {
@@ -1468,7 +1481,7 @@ body.loaded .cat-message {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
-    background-image: url('images/bubble/background.png');
+    background-image: url('images/bubble/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1523,7 +1536,7 @@ body.loaded .cat-message {
 .congratulation-card {
     position: absolute;
     left: -120px;
-    top: 20%;
+    top: 10%;
     transform: translateY(-50%);
     max-width: 280px;
     width: 280px;
@@ -1595,7 +1608,7 @@ body.loaded .congratulation-card {
     max-width: 1400px;
     margin: 0 auto;
     padding: 80px 60px;
-    background-image: url('images/event calendar/background.png');
+    background-image: url('images/event calendar/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1621,12 +1634,13 @@ body.loaded .congratulation-card {
 .advent-calendar-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 50px;
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
     z-index: 10;
+    justify-content: center;
 }
 
 .advent-calendar-visual {
@@ -1647,7 +1661,7 @@ body.loaded .congratulation-card {
     font-size: 48px;
     font-weight: 700;
     color: #1A1A2E;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
 }
@@ -1699,12 +1713,21 @@ body.loaded .congratulation-card {
     position: relative;
 }
 
+.calendar-image:not(.main-image) {
+    background: rgba(255, 255, 255, 0.18);
+    padding: 12px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
 .calendar-image img {
     width: auto;
     height: 450px;
     display: block;
-    filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.2));
+    border-radius: 24px;
+    filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.25));
 }
+
 
 .calendar-image.main-image {
     z-index: 10;
@@ -1714,6 +1737,8 @@ body.loaded .congratulation-card {
 .calendar-image.main-image img {
     height: 520px;
     filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.3));
+    border: 2px solid rgba(58, 58, 58, 0.51);
+    border-radius: 24px;
 }
 
 .calendar-image:first-child {
@@ -2201,7 +2226,9 @@ footer::after {
         padding: 60px 30px;
     }
 
-
+    .calendar-image:not(.main-image) {
+        padding: 12px;
+    }
 
     .calendar-image img {
         width: auto;
@@ -2210,9 +2237,12 @@ footer::after {
         filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.2));
     }
 
+    .calendar-image:not(.main-image) img {
+        filter: none;
+    }
+
     .calendar-image.main-image img {
         height: 410px;
-        filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.3));
     }
 
     .cat-phone {
@@ -2269,6 +2299,7 @@ footer::after {
 
     .phone-container {
         margin: 0 50px 0 20px;
+        min-height: 550px;
     }
 
     .widget-overlay {
@@ -2445,10 +2476,21 @@ footer::after {
     .street-beat-content,
     .cat-game-content,
     .europe-game-content,
-    .bubble-game-content,
-    .advent-calendar-content {
+    .bubble-game-content{
         gap: 50px;
     }
+
+    .advent-calendar-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+    }
+
 
     .flappy-content {
         padding: 0 20px;
@@ -2462,6 +2504,7 @@ footer::after {
     .advent-calendar-info h2 {
         font-size: 38px;
     }
+
 
     .contact-container {
         gap: 30px;
@@ -2598,12 +2641,12 @@ footer::after {
     .advent-calendar-info p,
     .contact-subtitle,
     .step-description {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .features .section-subtitle,
     .flappy-showcase .section-subtitle{
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .hero-text .subtitle{
@@ -2924,6 +2967,7 @@ footer::after {
 
     .phone-container {
         margin: 0 30px 0 0;
+        min-height: 500px;
     }
 
     .phone-container::before {
@@ -3058,6 +3102,11 @@ footer::after {
         border: none;
     }
 
+    .advent-calendar-wrapper {
+        overflow-x: hidden;
+        padding: 60px 0;
+    }
+
     .street-beat-wrapper,
     .bubble-game-wrapper,
     .cat-game-wrapper {
@@ -3092,6 +3141,12 @@ footer::after {
         font-size: 36px;
     }
 
+    .street-beat-info h3,
+    .europe-game-info h3,
+    .advent-calendar-info h3{
+        font-size: 22px;
+    }
+
     .game-screen {
         flex-direction: row;
         gap: 0;
@@ -3120,6 +3175,7 @@ footer::after {
         background-size: contain;
         border-radius: 0 !important;
         border: none !important;
+        padding: 30px 0 30px 0;
     }
 
     .cat-game-content {
@@ -3244,6 +3300,7 @@ footer::after {
 
     .advent-calendar-section {
         padding: 0;
+        overflow-x: hidden;
     }
 
     .advent-calendar-content {
@@ -3254,11 +3311,12 @@ footer::after {
     .advent-calendar-info {
         order: 2;
         padding: 30px;
-        margin: 0 24px;
+        margin: 0 40px;
     }
 
     .advent-calendar-visual {
         order: 1;
+        overflow-x: hidden;
     }
 
     .advent-calendar-info h2 {
@@ -3267,18 +3325,31 @@ footer::after {
 
     .calendar-images {
         gap: 0;
+        padding: 0 24px;
+    }
+
+    .calendar-image:not(.main-image) {
+        padding: 10px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);
     }
 
     .calendar-image.main-image {
-        margin: 0 -20px;
+        margin: 0 -15px;
     }
 
     .calendar-image img {
-        height: 420px;
+        height: 400px;
+        filter: none;
+    }
+
+    .calendar-image:not(.main-image) img {
+        filter: none;
     }
 
     .calendar-image.main-image img {
-        height: 500px;
+        height: 480px;
+        border-radius: 20px;
+        filter: none;
     }
 
     footer {
@@ -3286,7 +3357,6 @@ footer::after {
     }
 }
 
-/* Mobile - Very Small Screens */
 @media (max-width: 480px) {
     header {
         padding: 12px 16px;
@@ -3359,6 +3429,10 @@ footer::after {
 
     .street-beat-info {
         box-shadow: none;
+    }
+
+    .street-beat-content {
+        gap: 30px;
     }
 
     .street-beat-wrapper {
@@ -3457,6 +3531,7 @@ footer::after {
 
     .phone-container {
         margin: 0 10px 0 10px;
+        min-height: 300px;
     }
 
     .phone-container::before {
@@ -3705,7 +3780,7 @@ footer::after {
     }
 
     .europe-game-section {
-        background-image: url('images/europe/background.jpg');
+        background-image: url('images/europe/background.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -3729,7 +3804,6 @@ footer::after {
     }
 
     .street-beat-wrapper,
-    .cat-game-wrapper,
     .europe-game-wrapper,
     .bubble-game-wrapper,
     .advent-calendar-wrapper {
@@ -3744,6 +3818,7 @@ footer::after {
         background-size: contain;
         border-radius: 0 !important;
         border: none;
+        padding: 40px 0;
     }
 
     .europe-game-wrapper {
@@ -3787,7 +3862,7 @@ footer::after {
 
     .cat-game-info {
         padding: 0;
-        margin: 20px 20px 0 20px;
+        margin: 0 20px;
     }
 
     .bubble-game-info {
@@ -3812,8 +3887,15 @@ footer::after {
     .bubble-game-info h2,
     .advent-calendar-info h2 {
         font-size: 24px;
-        margin-bottom: 14px;
+        margin-bottom: 10px;
         font-weight: 550;
+    }
+
+    .street-beat-info h3,
+    .europe-game-info h3,
+    .advent-calendar-info h3 {
+        font-size: 16px;
+        font-weight: 600;
     }
 
     .street-beat-info p,
@@ -3881,6 +3963,10 @@ footer::after {
         top: 20px;
     }
 
+    .calendar-image:not(.main-image) {
+        padding: 8px;
+    }
+
     .calendar-image.main-image {
         margin: 0 -15px;
     }
@@ -3889,8 +3975,14 @@ footer::after {
         height: 220px;
     }
 
+    .calendar-image:not(.main-image) img {
+        filter: none;
+    }
+
     .calendar-image.main-image img {
         height: 270px;
+        border: 1.5px solid rgba(58, 58, 58, 0.68);
+        border-radius: 16px;
     }
 
     .contact {
